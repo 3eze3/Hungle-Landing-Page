@@ -1,0 +1,27 @@
+@use "../abstract/minxis" as layout;
+.introduction {
+  width: 100%;
+  height: 100%;
+  @include layout.flex();
+  margin-inline: auto;
+  outline: solid red 1px;
+  &__wrapper {
+    outline: solid red 1px;
+    width: 70%;
+
+    @include layout.flex();
+  }
+  &__content {
+    outline: green 1px solid;
+    text-align: center;
+    @include layout.flex();
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+  }
+  &__description {
+    width: 50%;
+  }
+  &__ilustration {
+    width: 90%;
+  }
+}

@@ -1,0 +1,23 @@
+@use "../abstract/minxis" as layout;
+.header {
+  max-width: 93rem;
+  min-height: 13rem;
+  @include layout.flex($justify: space-between, $direction: row);
+  padding-block: 2rem;
+  padding-inline: 3rem;
+  margin-inline: auto;
+  margin-bottom: 10rem;
+  outline: solid red 1px;
+  &__logo {
+    width: 14rem;
+  }
+  &__link {
+    outline: solid red 1px;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+}
