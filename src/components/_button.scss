@@ -1,7 +1,9 @@
+@use "../abstract/varibles" as colors;
+@use "../abstract/minxis" as bx-sh;
 .btn {
   padding: 1.75rem 7rem;
   margin-block: 1rem;
-  background-color: red;
+  background-color: colors.$pink;
   border-radius: 3rem;
   -webkit-border-radius: 3rem;
   -moz-border-radius: 3rem;
@@ -9,4 +11,7 @@
   -o-border-radius: 3rem;
   // color: ;
   // font-weight: ;
+  &:hover {
+    background-color: colors.$light-pink;
+  }
 }
