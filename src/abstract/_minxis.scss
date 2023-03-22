@@ -16,6 +16,16 @@
   box-shadow: $eje $eje ($eje * 2) $color,
     (-$eje) (-$eje) ($eje * 2) $ligth-color;
 }
+@mixin shadow-normal($eje, $color) {
+  box-shadow: $eje ($eje + 0.3) $eje $color;
+}
+@mixin transitions($property, $time: 0.2s, $function: ease) {
+  transition: $property $time $function;
+  -webkit-transition: $property $time $function;
+  -moz-transition: $property $time $function;
+  -ms-transition: $property $time $function;
+  -o-transition: $property $time $function;
+}
 // Media Query
 @mixin media-breakpoint($breakpoint, $direction: min-width) {
   @media screen and ($direction: $breakpoint) {
