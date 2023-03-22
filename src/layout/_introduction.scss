@@ -1,4 +1,5 @@
 @use "../abstract/minxis" as layout;
+@use "../abstract/varibles" as colors_fonts;
 .introduction {
   width: 100%;
   height: 100%;
@@ -8,18 +9,20 @@
   &__wrapper {
     outline: solid red 1px;
     width: 70%;
-
     @include layout.flex();
+    gap: 3rem;
   }
   &__content {
     outline: green 1px solid;
     text-align: center;
     @include layout.flex();
-    gap: 1.5rem;
+    gap: 2.15rem;
     margin-bottom: 5rem;
   }
   &__description {
-    width: 50%;
+    width: 55%;
+    font-size: colors_fonts.$size-1-2em;
+    line-height: colors_fonts.$line-heigt-1-4;
   }
   &__ilustration {
     width: 90%;
