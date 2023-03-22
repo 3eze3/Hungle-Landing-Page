@@ -22,5 +22,10 @@
     -moz-border-radius: 1.3rem;
     -ms-border-radius: 1.3rem;
     -o-border-radius: 1.3rem;
+    &:hover {
+      border: solid colors.$light-pink 0.125rem;
+      color: colors.$light-pink;
+      @include layout_bxsh.shadow-neo(0.03rem, colors.$light-pink);
+    }
   }
 }
