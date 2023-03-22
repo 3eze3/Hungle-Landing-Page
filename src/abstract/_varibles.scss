@@ -3,6 +3,12 @@ $desing-mobile: 480px;
 //  --------------- Weigth---------------
 $font-600: 600;
 $font-700: 700;
+// ---------------font-size ---------------
+$size-5em: 5em;
+$size-3em: 3em;
+$size-2-75em: 2.75em;
+$size-1em: 1em;
+$size-1-2em: 1.2em;
 // --------------- Primary ---------------
 $pink: hsl(322, 100%, 66%);
 $light-pink: hsl(321, 100%, 78%);
@@ -10,3 +16,6 @@ $light-red: hsl(0, 100%, 63%);
 // ---------------Neutral ---------------
 $very-dark-cyan: hsl(192, 100%, 9%);
 $very-pale-blue: hsl(207, 100%, 98%);
+// --------------- letter-spacing And line-heigth ---------------
+$spacing: 0.01em;
+$line-heigt-1-4: 1.4;
