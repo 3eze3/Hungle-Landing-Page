@@ -11,6 +11,11 @@
     display: inline-block;
   }
 }
+@mixin shadow-neo($eje, $color) {
+  $ligth-color: mix($color, #fff, 50%);
+  box-shadow: $eje $eje ($eje * 2) $color,
+    (-$eje) (-$eje) ($eje * 2) $ligth-color;
+}
 // Media Query
 @mixin media-breakpoint($breakpoint, $direction: min-width) {
   @media screen and ($direction: $breakpoint) {
