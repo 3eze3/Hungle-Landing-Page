@@ -1,8 +1,9 @@
-@use "../abstract/minxis" as layout;
+@use "../abstract/minxis" as layout_bxsh;
+@use "../abstract/varibles" as colors;
 .header {
   max-width: 93rem;
   min-height: 13rem;
-  @include layout.flex($justify: space-between, $direction: row);
+  @include layout_bxsh.flex($justify: space-between, $direction: row);
   padding-block: 2rem;
   padding-inline: 3rem;
   margin-inline: auto;
@@ -12,12 +13,14 @@
     width: 14rem;
   }
   &__link {
-    outline: solid red 1px;
-    padding: 0.5rem 2rem;
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+    border: solid colors.$pink 0.125rem;
+    padding: 0.6rem 2rem;
+    color: colors.$pink;
+    @include layout_bxsh.shadow-neo(0.03rem, colors.$pink);
+    border-radius: 1.3rem;
+    -webkit-border-radius: 1.3rem;
+    -moz-border-radius: 1.3rem;
+    -ms-border-radius: 1.3rem;
+    -o-border-radius: 1.3rem;
   }
 }
