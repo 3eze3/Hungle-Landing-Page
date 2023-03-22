@@ -1,5 +1,5 @@
 @use "../abstract/varibles" as colors;
-@use "../abstract/minxis" as bx-sh;
+@use "../abstract/minxis" as bx-sh_transition;
 .btn {
   padding: 1.75rem 7rem;
   margin-block: 1rem;
@@ -9,9 +9,14 @@
   -moz-border-radius: 3rem;
   -ms-border-radius: 3rem;
   -o-border-radius: 3rem;
-  // color: ;
-  // font-weight: ;
+  color: colors.$very-pale-blue;
+  font-weight: colors.$font-600;
+  letter-spacing: colors.$spacing-btn;
+  @include bx-sh_transition.shadow-normal(0.3rem, #0000000d);
+  @include bx-sh_transition.transitions(background-color);
   &:hover {
+    cursor: pointer;
     background-color: colors.$light-pink;
+    @include bx-sh_transition.transitions(background-color);
   }
 }
