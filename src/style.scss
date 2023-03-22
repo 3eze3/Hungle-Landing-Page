@@ -1,5 +1,8 @@
+// Reset, fonts
 @use "base/reset_tags";
 @use "base/fonts_colors";
+// Structure Layout
 @use "layout/header";
 @use "layout/introduction";
-// @use "components/";
+// Components
+@use "components/button";
