@@ -131,13 +131,15 @@ a {
   width: 14rem;
 }
 .header__link {
-  outline: solid red 1px;
-  padding: 0.5rem 2rem;
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
+  border: solid hsl(322deg, 100%, 66%) 0.125rem;
+  padding: 0.6rem 2rem;
+  color: hsl(322deg, 100%, 66%);
+  box-shadow: 0.03rem 0.03rem 0.06rem hsl(322deg, 100%, 66%), -0.03rem -0.03rem 0.06rem #ffa9df;
+  border-radius: 1.3rem;
+  -webkit-border-radius: 1.3rem;
+  -moz-border-radius: 1.3rem;
+  -ms-border-radius: 1.3rem;
+  -o-border-radius: 1.3rem;
 }
 
 .introduction {
