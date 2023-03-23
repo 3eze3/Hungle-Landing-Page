@@ -1,8 +1,17 @@
 @use "../abstract/varibles" as colors_fonts;
 @font-face {
-  font-family: Open-sans;
+  font-family: Open-sans-regular;
   src: url("../../asests/fonts/static/OpenSans/OpenSans-Regular.ttf");
 }
+@font-face {
+  font-family: Open-sans-bold;
+  src: url("../../asests/fonts/static/OpenSans/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: Open-sans-semi-bold;
+  src: url("../../asests/fonts/static/OpenSans/OpenSans-SemiBold.ttf");
+}
+
 @font-face {
   font-family: Popins;
   src: url("../../asests/fonts/static/Poppins/Poppins-Bold.ttf");
@@ -12,7 +21,7 @@ body {
   min-height: 100vh;
   font-size: 100%;
   hyphens: auto;
-  font-family: Open-sans;
+  font-family: Open-sans-regular;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,6 +39,7 @@ span {
 }
 span {
   font-size: colors_fonts.$size-5em;
+  font-family: Open-sans-bold;
 }
 h1 {
   font-size: colors_fonts.$size-3em;
@@ -38,7 +48,9 @@ h2,
 h3 {
   font-size: colors_fonts.$size-2-75em;
 }
-
+button {
+  font-family: Open-sans-semi-bold;
+}
 p {
   color: colors_fonts.$very-dark-cyan;
   font-size: colors_fonts.$size-1em;
