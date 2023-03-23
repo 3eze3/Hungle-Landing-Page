@@ -4,11 +4,13 @@
   align-items: $aling;
   justify-content: $justify;
 }
-//
 @mixin contentImage($url) {
   &::before {
-    content: url("../images/icon-#{$url}.svg");
-    display: inline-block;
+    content: url("../../asests/images/icon-#{$url}.svg");
+    display: block;
+    position: absolute;
+    top: -2.8rem;
+    left: 0rem;
   }
 }
 @mixin shadow-neo($eje, $color) {
