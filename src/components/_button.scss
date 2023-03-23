@@ -10,8 +10,8 @@
   -ms-border-radius: 3rem;
   -o-border-radius: 3rem;
   color: colors.$very-pale-blue;
-  font-weight: colors.$font-600;
-  letter-spacing: colors.$spacing-btn;
+  font-size: colors.$size-1-2em;
+  letter-spacing: colors.$spacing;
   @include bx-sh_transition.shadow-normal(0.3rem, #0000000d);
   @include bx-sh_transition.transitions(background-color);
   &:hover {
