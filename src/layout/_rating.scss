@@ -1,0 +1,18 @@
+@use "../abstract/minxis" as layout;
+.rating {
+  padding-inline: 4rem;
+  max-width: 70%;
+  margin-block: 10rem;
+  margin-inline: auto;
+  @include layout.flex($direction: row, $justify: space-between);
+  gap: 3rem;
+  &__information {
+    position: relative;
+    &--communities {
+      @include layout.contentImage(communities);
+    }
+    &--messages {
+      @include layout.contentImage(messages);
+    }
+  }
+}
