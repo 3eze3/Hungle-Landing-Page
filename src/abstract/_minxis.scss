@@ -10,9 +10,40 @@
     display: block;
     position: absolute;
     top: -2.8rem;
-    left: 0rem;
+    left: 0;
   }
 }
+@mixin contentText($text) {
+  &::after {
+    content: "#{$text}";
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: -2.8rem;
+    left: 10%;
+    font-size: 1.3em;
+    color: rgba(59, 59, 59, 0.519);
+  }
+}
+
+@mixin contentBgTop($url) {
+  &::before {
+    content: url("../../asests/images/bg-#{$url}.svg");
+    position: absolute;
+    top: -10.1rem;
+    left: 0;
+  }
+}
+
+@mixin contentBgBottom($url) {
+  &::before {
+    content: url("../../asests/images/bg-#{$url}.svg");
+    position: absolute;
+    bottom: -10.1rem;
+    left: 0;
+  }
+}
+
 @mixin shadow-neo($eje, $color) {
   $ligth-color: mix($color, #fff, 50%);
   box-shadow: $eje $eje ($eje * 2) $color,
