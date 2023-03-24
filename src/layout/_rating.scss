@@ -10,9 +10,11 @@
     position: relative;
     &--communities {
       @include layout.contentImage(communities);
+      @include layout.contentText("Communities Formed");
     }
     &--messages {
       @include layout.contentImage(messages);
+      @include layout.contentText("Messages Sent");
     }
   }
 }
