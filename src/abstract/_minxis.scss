@@ -26,20 +26,20 @@
   }
 }
 
-@mixin contentBgTop($url) {
+@mixin contentBgTop($url, $top: -10.1rem) {
   &::after {
     content: url("../asests/images/bg-#{$url}.svg");
     position: absolute;
-    top: -10.1rem;
+    top: $top;
     left: 0;
   }
 }
 
-@mixin contentBgBottom($url) {
+@mixin contentBgBottom($url, $top: -10.1rem) {
   &::before {
     content: url("../../asests/images/bg-#{$url}.svg");
     position: absolute;
-    bottom: -10.1rem;
+    bottom: $top;
     left: 0;
   }
 }
