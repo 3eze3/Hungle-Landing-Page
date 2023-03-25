@@ -4,6 +4,32 @@
   position: relative;
   @include layout.contentBgTop(footer-top-desktop, -11.1rem);
   padding-inline: 9rem;
+  padding-block: 2rem;
   min-height: 33rem;
   background-color: colors.$very-dark-cyan;
+  &__wrapper {
+    width: 100%;
+    min-height: 15rem;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: flex-start;
+  }
+  &__content {
+    background-color: green;
+  }
+  &__logo {
+    filter: brightness(0) invert(1);
+  }
+  &__information {
+    color: #fff;
+  }
+  &__contact {
+    outline: solid red 1px;
+  }
 }
