@@ -1,0 +1,46 @@
+@use "../abstract/minxis" as layout;
+@use "../abstract/varibles" as colors;
+.cards {
+  width: 100%;
+  margin-top: 20rem;
+  &__card {
+    @include layout.flex(center, space-between, row);
+    gap: 2rem;
+    padding-block: 5rem;
+    padding-inline: 9rem;
+    margin-bottom: 13rem;
+    position: relative;
+    background-color: colors.$very-pale-blue;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      background-color: #fff;
+    }
+
+    &:nth-child(even) .cards__description {
+      margin-right: 7rem;
+    }
+
+    &:nth-child(even) .cards__wrapper {
+      flex: 53%;
+      margin-right: 0;
+      margin-left: 10rem;
+    }
+    &:nth-child(odd) {
+      @include layout.contentBgTop(section-top-desktop-1);
+      @include layout.contentBgBottom(section-bottom-desktop-1);
+    }
+  }
+  &__wrapper {
+    flex: 60%;
+  }
+  &__title {
+    margin-bottom: 1rem;
+  }
+  &__description {
+    margin-right: 15rem;
+    line-height: 1.5;
+  }
+  &__image {
+    flex: 45%;
+  }
+}
