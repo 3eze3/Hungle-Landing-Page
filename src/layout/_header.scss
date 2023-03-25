@@ -8,9 +8,7 @@
   padding-inline: 3rem;
   margin-inline: auto;
   margin-bottom: 10rem;
-  &__logo {
-    width: 14rem;
-  }
+
   &__link {
     border: solid colors.$pink 0.125rem;
     padding: 0.6rem 2rem;
@@ -27,4 +25,7 @@
       @include layout_bxsh.shadow-neo(0.03rem, colors.$light-pink);
     }
   }
+}
+.logo {
+  width: 14rem;
 }
