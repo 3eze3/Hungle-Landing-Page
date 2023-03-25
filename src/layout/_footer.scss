@@ -1,0 +1,9 @@
+@use "../abstract/minxis" as layout;
+@use "../abstract/varibles" as colors;
+.footer {
+  position: relative;
+  @include layout.contentBgTop(footer-top-desktop, -11.1rem);
+  padding-inline: 9rem;
+  min-height: 33rem;
+  background-color: colors.$very-dark-cyan;
+}
