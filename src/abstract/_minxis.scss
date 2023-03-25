@@ -27,8 +27,8 @@
 }
 
 @mixin contentBgTop($url) {
-  &::before {
-    content: url("../../asests/images/bg-#{$url}.svg");
+  &::after {
+    content: url("../asests/images/bg-#{$url}.svg");
     position: absolute;
     top: -10.1rem;
     left: 0;
