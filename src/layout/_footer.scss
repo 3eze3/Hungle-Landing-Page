@@ -8,28 +8,98 @@
   min-height: 33rem;
   background-color: colors.$very-dark-cyan;
   &__wrapper {
-    width: 100%;
-    min-height: 15rem;
-    background-color: red;
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: flex-start;
+    margin-top: 4rem;
+    // outline: solid red 1px;
+    display: flex;
+    gap: 16rem;
   }
   &__content {
-    background-color: green;
+    outline: solid green 1px;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #fff;
+    padding-block: 2rem;
   }
   &__logo {
-    filter: brightness(0) invert(1);
+    filter: brightness(20%) invert(1);
   }
   &__information {
     color: #fff;
+    font-size: 0.95em;
+    line-height: 1.7;
+    margin-right: 10.1rem;
+  }
+  &__social {
+    margin-top: 1rem;
   }
   &__contact {
+    color: #fff;
+    font-style: normal;
+    margin-bottom: 1rem;
+    // @include layout.affter-image();
+    // display: inline-flex;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    &::before {
+      content: url("../../asests/images/icon-phone.svg");
+    }
+  }
+  &__title {
+    font-size: 1.5em;
+    letter-spacing: 0.09em;
+  }
+  &__form {
+    width: 85%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  &__textSub {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  &__input {
+    background-color: #fff;
+    outline: solid #000 1px;
+    padding-block: 0.8rem;
+    padding-left: 1rem;
+    font-size: 0.88em;
+    border-radius: 0.3rem;
+    color: #000;
+  }
+  &__btn {
+    padding-block: 0.8rem;
+    font-size: 0.95em;
+    font-weight: var(--weight-600);
+    opacity: 1;
+    color: #fff;
+    background-color: var(--bright-blue);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+  }
+  &__list {
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
     outline: solid red 1px;
   }
 }
