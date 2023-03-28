@@ -13,6 +13,11 @@
     left: 0;
   }
 }
+@mixin affter-image($url) {
+  &::after {
+    content: url("../../asests/images/icon-#{$url}.svg");
+  }
+}
 @mixin contentText($text) {
   &::after {
     content: "#{$text}";
