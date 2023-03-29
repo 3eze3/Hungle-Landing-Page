@@ -3,6 +3,9 @@
 .cards {
   width: 100%;
   margin-top: 20rem;
+  @include layout.media-breakpoint(480px, max-width) {
+    margin-top: 16rem;
+  }
   &__card {
     @include layout.flex(center, space-between, row);
     gap: 2rem;
@@ -11,16 +14,33 @@
     margin-bottom: 13rem;
     position: relative;
     background-color: colors.$very-pale-blue;
+
+    @include layout.media-breakpoint(480px, max-width) {
+      gap: 3rem;
+      padding-block: 4rem;
+      padding-inline: 3rem;
+      margin-bottom: 9rem;
+      @include layout.flex($direction: column-reverse);
+    }
     &:nth-child(even) {
       flex-direction: row-reverse;
+      @include layout.media-breakpoint(480px, max-width) {
+        flex-direction: column;
+      }
       background-color: #fff;
     }
 
     &:nth-child(even) .cards__description {
       margin-right: 7rem;
+      @include layout.media-breakpoint(480px, max-width) {
+        margin-right: 0;
+      }
     }
 
     &:nth-child(even) .cards__wrapper {
+      @include layout.media-breakpoint(480px, max-width) {
+        margin-left: 0;
+      }
       flex: 53%;
       margin-right: 0;
       margin-left: 10rem;
@@ -36,11 +56,21 @@
   }
   &__wrapper {
     flex: 60%;
+    padding: 1rem;
+    @include layout.media-breakpoint(480px, max-width) {
+      text-align: center;
+      padding: 0.15rem;
+    }
   }
   &__title {
     margin-bottom: 1rem;
   }
+
   &__description {
+    @include layout.media-breakpoint(480px, max-width) {
+      line-height: 1.6;
+      margin-right: 1rem;
+    }
     margin-right: 15rem;
     line-height: 1.5;
   }
