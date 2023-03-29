@@ -2,52 +2,47 @@
 @use "../abstract/varibles" as colors;
 .footer {
   position: relative;
-  @include layout.contentBgTop(footer-top-desktop, -11.1rem);
-  padding-inline: 9rem;
-  padding-block: 2rem;
   min-height: 33rem;
+  padding-block: 2rem;
+  padding-inline: 9rem;
   background-color: colors.$very-dark-cyan;
+  @include layout.media-breakpoint(480px, max-width) {
+    @include layout.contentBgTop(footer-top-mobile, -3.8rem);
+  }
   &__wrapper {
     margin-top: 4rem;
-    // outline: solid red 1px;
-    display: flex;
-    gap: 16rem;
+    @include layout.flex(flex-start, space-between, row);
   }
   &__content {
-    outline: solid green 1px;
-    max-width: 50rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    max-width: 32rem;
+    padding-block: 2rem;
+    @include layout.flex(flex-start, center);
     gap: 1.5rem;
     color: #fff;
-    padding-block: 2rem;
   }
   &__logo {
-    filter: brightness(20%) invert(1);
+    filter: brightness(10%) invert(1);
   }
   &__information {
-    color: #fff;
+    margin-right: 9.8rem;
     font-size: 0.95em;
     line-height: 1.7;
-    margin-right: 10.1rem;
+    color: #fff;
   }
   &__social {
     margin-top: 1rem;
   }
   &__contact {
-    color: #fff;
-    font-style: normal;
     margin-bottom: 1rem;
-    // @include layout.affter-image();
-    // display: inline-flex;
-    display: flex;
+    font-style: normal;
+    @include layout.flex(center, flex-start, row);
     gap: 1rem;
-    align-items: center;
-    justify-content: flex-start;
-    &::before {
-      content: url("../../asests/images/icon-phone.svg");
+    color: #fff;
+    &--phone {
+      @include layout.before-image(phone);
+    }
+    &--email {
+      @include layout.before-image(email);
     }
   }
   &__title {
@@ -56,50 +51,48 @@
   }
   &__form {
     width: 85%;
+    margin-top: 1rem;
     position: relative;
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 70% 35%;
     gap: 2.5rem;
-    margin-top: 1rem;
   }
 
   &__textSub {
+    width: 1px;
+    height: 1px;
     position: absolute;
     top: 0;
     left: 0;
-    width: 1px;
-    height: 1px;
     z-index: -1;
     overflow: hidden;
   }
 
   &__input {
-    background-color: #fff;
-    outline: solid #000 1px;
     padding-block: 0.8rem;
     padding-left: 1rem;
     font-size: 0.88em;
-    border-radius: 0.3rem;
     color: #000;
+    background-color: #fff;
+    outline: solid transparent 1px;
+    border-radius: 0.3rem;
   }
   &__btn {
     padding-block: 0.8rem;
     font-size: 0.95em;
-    font-weight: var(--weight-600);
-    opacity: 1;
     color: #fff;
-    background-color: var(--bright-blue);
+    background-color: colors.$pink;
     border-radius: 0.3rem;
+    opacity: 1;
     cursor: pointer;
-    background-color: red;
-    color: #fff;
   }
   &__list {
     min-height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    @include layout.flex(center, flex-start, row);
     gap: 3rem;
-    outline: solid red 1px;
+  }
+  &__link {
+    height: 100%;
+    font-size: 2rem;
   }
 }
