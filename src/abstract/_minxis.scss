@@ -13,8 +13,8 @@
     left: 0;
   }
 }
-@mixin affter-image($url) {
-  &::after {
+@mixin before-image($url) {
+  &::before {
     content: url("../../asests/images/icon-#{$url}.svg");
   }
 }
