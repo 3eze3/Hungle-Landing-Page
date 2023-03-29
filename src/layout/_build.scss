@@ -1,10 +1,10 @@
 @use "../abstract/minxis" as layout;
 .build {
   margin-block: 23rem;
+  text-align: center;
   @include layout.media-breakpoint(480px, max-width) {
     margin-block: 17rem;
     padding-inline: 2rem;
-    text-align: center;
   }
   &__btn {
     margin-inline: auto;
