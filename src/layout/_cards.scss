@@ -28,6 +28,10 @@
     &:nth-child(odd) {
       @include layout.contentBgTop(section-top-desktop-1);
       @include layout.contentBgBottom(section-bottom-desktop-1);
+      @include layout.media-breakpoint(480px, max-width) {
+        @include layout.contentBgTop(section-top-mobile-1, -8rem);
+        @include layout.contentBgBottom(section-bottom-mobile-1, -4rem);
+      }
     }
   }
   &__wrapper {
