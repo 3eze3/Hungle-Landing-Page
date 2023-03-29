@@ -36,8 +36,7 @@
     content: url("../asests/images/bg-#{$url}.svg");
     position: absolute;
     top: $top;
-    //
-    left: -1.1rem;
+    left: -1.15rem;
   }
 }
 
@@ -46,8 +45,7 @@
     content: url("../../asests/images/bg-#{$url}.svg");
     position: absolute;
     bottom: $top;
-    //
-    left: -1.1rem;
+    left: -1.15rem;
   }
 }
 
