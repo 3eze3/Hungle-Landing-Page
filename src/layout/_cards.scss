@@ -8,7 +8,7 @@
   }
   &__card {
     @include layout.flex(center, space-between, row);
-    gap: 2rem;
+    gap: 3rem;
     padding-block: 5rem;
     padding-inline: 9rem;
     margin-bottom: 13rem;
@@ -16,9 +16,9 @@
     background-color: colors.$very-pale-blue;
 
     @include layout.media-breakpoint(480px, max-width) {
-      gap: 3rem;
+      gap: 2rem;
       padding-block: 4rem;
-      padding-inline: 3rem;
+      padding-inline: 2.75rem;
       margin-bottom: 9rem;
       @include layout.flex($direction: column-reverse);
     }
@@ -41,7 +41,7 @@
       @include layout.media-breakpoint(480px, max-width) {
         margin-left: 0;
       }
-      flex: 53%;
+      flex: 52%;
       margin-right: 0;
       margin-left: 10rem;
     }
@@ -59,7 +59,7 @@
     padding: 1rem;
     @include layout.media-breakpoint(480px, max-width) {
       text-align: center;
-      padding: 0.15rem;
+      padding: 0;
     }
   }
   &__title {
