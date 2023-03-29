@@ -7,6 +7,7 @@
   padding-inline: 9rem;
   position: relative;
   background-color: colors.$very-dark-cyan;
+  @include layout.contentBgTop(footer-top-desktop, -11.25rem);
   @include layout.media-breakpoint(480px, max-width) {
     padding-inline: 1rem;
     @include layout.contentBgTop(footer-top-mobile, -3.75rem);
