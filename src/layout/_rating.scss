@@ -5,7 +5,10 @@
   margin-block: 10rem;
   margin-inline: auto;
   @include layout.flex($direction: row, $justify: space-between);
-  gap: 3rem;
+  @include layout.media-breakpoint(480px, max-width) {
+    @include layout.flex();
+  }
+  gap: 10rem;
   &__information {
     position: relative;
     &--communities {
