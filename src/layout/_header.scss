@@ -7,8 +7,14 @@
   padding-block: 2rem;
   padding-inline: 3rem;
   margin-inline: auto;
-  margin-bottom: 10rem;
-
+  margin-bottom: 8rem;
+  @include layout_bxsh.media-breakpoint(480px, max-width) {
+    max-width: 100%;
+    min-height: 5rem;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    margin-bottom: 10rem;
+  }
   &__link {
     border: solid colors.$pink 0.125rem;
     padding: 0.6rem 2rem;
@@ -19,6 +25,10 @@
     -moz-border-radius: 1.3rem;
     -ms-border-radius: 1.3rem;
     -o-border-radius: 1.3rem;
+
+    @include layout_bxsh.media-breakpoint(480px, max-width) {
+      padding: 0.3rem 1.4rem;
+    }
     &:hover {
       border: solid colors.$light-pink 0.125rem;
       color: colors.$light-pink;
@@ -28,4 +38,7 @@
 }
 .logo {
   width: 14rem;
+  @include layout_bxsh.media-breakpoint(480px, max-width) {
+    width: 8rem;
+  }
 }
