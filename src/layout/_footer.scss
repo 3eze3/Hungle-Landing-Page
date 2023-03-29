@@ -1,24 +1,33 @@
 @use "../abstract/minxis" as layout;
 @use "../abstract/varibles" as colors;
 .footer {
-  position: relative;
+  width: 100%;
   min-height: 33rem;
   padding-block: 2rem;
   padding-inline: 9rem;
+  position: relative;
   background-color: colors.$very-dark-cyan;
   @include layout.media-breakpoint(480px, max-width) {
-    @include layout.contentBgTop(footer-top-mobile, -3.8rem);
+    padding-inline: 1rem;
+    @include layout.contentBgTop(footer-top-mobile, -3.75rem);
   }
   &__wrapper {
     margin-top: 4rem;
     @include layout.flex(flex-start, space-between, row);
+    @include layout.media-breakpoint(480px, max-width) {
+      @include layout.flex($direction: column-reverse);
+      gap: 2rem;
+    }
   }
   &__content {
     max-width: 32rem;
-    padding-block: 2rem;
-    @include layout.flex(flex-start, center);
     gap: 1.5rem;
     color: #fff;
+    @include layout.flex(flex-start, center);
+    @include layout.media-breakpoint(480px, max-width) {
+      max-width: 100%;
+      padding: 1rem;
+    }
   }
   &__logo {
     filter: brightness(10%) invert(1);
@@ -28,12 +37,17 @@
     font-size: 0.95em;
     line-height: 1.7;
     color: #fff;
+
+    @include layout.media-breakpoint(480px, max-width) {
+      width: 100%;
+      margin-right: 0;
+    }
   }
   &__social {
-    margin-top: 1rem;
+    margin-top: 1.2rem;
   }
   &__contact {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     font-style: normal;
     @include layout.flex(center, flex-start, row);
     gap: 1rem;
@@ -50,11 +64,15 @@
     letter-spacing: 0.09em;
   }
   &__form {
-    width: 85%;
+    width: 100%;
     margin-top: 1rem;
     position: relative;
     display: grid;
     grid-template-columns: 70% 35%;
+    @include layout.media-breakpoint(480px, max-width) {
+      grid-template-columns: 1fr;
+      justify-items: end;
+    }
     gap: 2.5rem;
   }
 
@@ -63,7 +81,7 @@
     height: 1px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -10000;
     z-index: -1;
     overflow: hidden;
   }
@@ -76,20 +94,32 @@
     background-color: #fff;
     outline: solid transparent 1px;
     border-radius: 0.3rem;
+
+    @include layout.media-breakpoint(480px, max-width) {
+      width: 100%;
+    }
   }
   &__btn {
     padding-block: 0.8rem;
+    padding-inline: 1.3rem;
     font-size: 0.95em;
     color: #fff;
     background-color: colors.$pink;
     border-radius: 0.3rem;
     opacity: 1;
     cursor: pointer;
+    @include layout.media-breakpoint(480px, max-width) {
+      padding-block: 0.9rem;
+    }
   }
   &__list {
     min-height: 5rem;
     @include layout.flex(center, flex-start, row);
     gap: 3rem;
+    @include layout.media-breakpoint(480px, max-width) {
+      @include layout.flex(center, flex-start, column);
+      gap: 1rem;
+    }
   }
   &__link {
     height: 100%;
