@@ -477,6 +477,12 @@ a {
   position: relative;
   background-color: hsl(192deg, 100%, 9%);
 }
+.footer::after {
+  content: url("../asests/images/bg-footer-top-desktop.svg");
+  position: absolute;
+  top: -11.25rem;
+  left: -1.1rem;
+}
 @media screen and (max-width: 480px) {
   .footer {
     padding-inline: 1rem;
