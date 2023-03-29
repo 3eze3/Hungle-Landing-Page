@@ -1,4 +1,5 @@
 @use "../abstract/varibles" as colors_fonts;
+@use "../abstract/minxis" as mobile;
 @font-face {
   font-family: Open-sans-regular;
   src: url("../../asests/fonts/static/OpenSans/OpenSans-Regular.ttf");
@@ -49,16 +50,27 @@ h2,
 h3 {
   font-size: colors_fonts.$size-2-75em;
 }
+
 button {
   font-family: Open-sans-semi-bold;
 }
 p {
-  color: colors_fonts.$very-dark-cyan;
   font-size: colors_fonts.$size-1em;
   line-height: colors_fonts.$line-heigt-1-4;
+  color: colors_fonts.$very-dark-cyan;
 }
 
 a {
-  color: colors_fonts.$very-pale-blue;
   font-size: colors_fonts.$size-1em;
+  color: colors_fonts.$very-pale-blue;
+}
+
+@include mobile.media-breakpoint(colors_fonts.$desing-mobile, max-width) {
+  h1 {
+    font-size: colors_fonts.$size-1-75em;
+  }
+  h2,
+  h3 {
+    font-size: colors_fonts.$size-1-45em;
+  }
 }
