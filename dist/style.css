@@ -61,19 +61,19 @@ svg {
 
 @font-face {
   font-family: Open-sans-regular;
-  src: url("../../asests/fonts/static/OpenSans/OpenSans-Regular.ttf");
+  src: url("../asests/fonts/static/OpenSans/OpenSans-Regular.ttf");
 }
 @font-face {
   font-family: Open-sans-bold;
-  src: url("../../asests/fonts/static/OpenSans/OpenSans-Bold.ttf");
+  src: url("../asests/fonts/static/OpenSans/OpenSans-Bold.ttf");
 }
 @font-face {
   font-family: Open-sans-semi-bold;
-  src: url("../../asests/fonts/static/OpenSans/OpenSans-SemiBold.ttf");
+  src: url("../asests/fonts/static/OpenSans/OpenSans-SemiBold.ttf");
 }
 @font-face {
   font-family: Popins;
-  src: url("../../asests/fonts/static/Poppins/Poppins-Bold.ttf");
+  src: url("../asests/fonts/static/Poppins/Poppins-Bold.ttf");
 }
 body {
   width: 100%;
@@ -307,7 +307,7 @@ a {
   position: relative;
 }
 .rating__information--communities::before {
-  content: url("../../asests/images/icon-communities.svg");
+  content: url("../asests/images/icon-communities.svg");
   display: block;
   position: absolute;
   top: -2.8rem;
@@ -324,7 +324,7 @@ a {
   color: rgba(59, 59, 59, 0.519);
 }
 .rating__information--messages::before {
-  content: url("../../asests/images/icon-messages.svg");
+  content: url("../asests/images/icon-messages.svg");
   display: block;
   position: absolute;
   top: -2.8rem;
@@ -408,7 +408,7 @@ a {
   left: -1.1rem;
 }
 .cards__card:nth-child(odd)::before {
-  content: url("../../asests/images/bg-section-bottom-desktop-1.svg");
+  content: url("../asests/images/bg-section-bottom-desktop-1.svg");
   position: absolute;
   bottom: -10.1rem;
   left: -1.1rem;
@@ -421,7 +421,7 @@ a {
     left: -1.1rem;
   }
   .cards__card:nth-child(odd)::before {
-    content: url("../../asests/images/bg-section-bottom-mobile-1.svg");
+    content: url("../asests/images/bg-section-bottom-mobile-1.svg");
     position: absolute;
     bottom: -4rem;
     left: -1.1rem;
@@ -554,10 +554,10 @@ a {
   color: #fff;
 }
 .footer__contact--phone::before {
-  content: url("../../asests/images/icon-phone.svg");
+  content: url("../asests/images/icon-phone.svg");
 }
 .footer__contact--email::before {
-  content: url("../../asests/images/icon-email.svg");
+  content: url("../asests/images/icon-email.svg");
 }
 .footer__title {
   font-size: 1.5em;
