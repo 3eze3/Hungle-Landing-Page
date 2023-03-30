@@ -410,7 +410,7 @@ a {
 .cards__card:nth-child(odd)::before {
   content: url("../asests/images/bg-section-bottom-desktop-1.svg");
   position: absolute;
-  bottom: -10.1rem;
+  bottom: -9.9rem;
   left: -1.1rem;
 }
 @media screen and (max-width: 480px) {
@@ -480,7 +480,7 @@ a {
 .footer::after {
   content: url("../asests/images/bg-footer-top-desktop.svg");
   position: absolute;
-  top: -11.25rem;
+  top: -10.75rem;
   left: -1.1rem;
 }
 @media screen and (max-width: 480px) {
