@@ -31,7 +31,7 @@
   }
 }
 
-@mixin contentBgTop($url, $top: -10.1rem) {
+@mixin contentBgTop($url, $top: -9.9rem) {
   &::after {
     content: url("../asests/images/bg-#{$url}.svg");
     position: absolute;
