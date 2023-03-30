@@ -6,7 +6,7 @@
 }
 @mixin contentImage($url) {
   &::before {
-    content: url("../../asests/images/icon-#{$url}.svg");
+    content: url("../asests/images/icon-#{$url}.svg");
     display: block;
     position: absolute;
     top: -2.8rem;
@@ -15,7 +15,7 @@
 }
 @mixin before-image($url) {
   &::before {
-    content: url("../../asests/images/icon-#{$url}.svg");
+    content: url("../asests/images/icon-#{$url}.svg");
   }
 }
 @mixin contentText($text) {
@@ -42,7 +42,7 @@
 
 @mixin contentBgBottom($url, $top: -10.1rem) {
   &::before {
-    content: url("../../asests/images/bg-#{$url}.svg");
+    content: url("../asests/images/bg-#{$url}.svg");
     position: absolute;
     bottom: $top;
     left: -1.1rem;
