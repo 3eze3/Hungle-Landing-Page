@@ -2,20 +2,20 @@
 @use "../abstract/minxis" as mobile;
 @font-face {
   font-family: Open-sans-regular;
-  src: url("../../asests/fonts/static/OpenSans/OpenSans-Regular.ttf");
+  src: url("../asests/fonts/static/OpenSans/OpenSans-Regular.ttf");
 }
 @font-face {
   font-family: Open-sans-bold;
-  src: url("../../asests/fonts/static/OpenSans/OpenSans-Bold.ttf");
+  src: url("../asests/fonts/static/OpenSans/OpenSans-Bold.ttf");
 }
 @font-face {
   font-family: Open-sans-semi-bold;
-  src: url("../../asests/fonts/static/OpenSans/OpenSans-SemiBold.ttf");
+  src: url("../asests/fonts/static/OpenSans/OpenSans-SemiBold.ttf");
 }
 
 @font-face {
   font-family: Popins;
-  src: url("../../asests/fonts/static/Poppins/Poppins-Bold.ttf");
+  src: url("../asests/fonts/static/Poppins/Poppins-Bold.ttf");
 }
 body {
   width: 100%;
